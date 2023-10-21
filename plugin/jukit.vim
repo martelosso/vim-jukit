@@ -241,9 +241,9 @@ fun! s:set_mappings() abort
     if !hasmapto('jukit#splits#toggle_auto_hist', 'n')
         nnoremap <buffer> <leader>ah <cmd>call jukit#splits#toggle_auto_hist()<cr>
     endif
-    if !hasmapto('jukit#layouts#set_layout', 'n')
-        nnoremap <buffer> <leader>sl <cmd>call jukit#layouts#set_layout()<cr>
-    endif
+    "if !hasmapto('jukit#layouts#set_layout', 'n')
+    "    nnoremap <buffer> <leader>sl <cmd>call jukit#layouts#set_layout()<cr>
+    "endif
 
     " sending code
     if !hasmapto('jukit#send#line', 'n')
